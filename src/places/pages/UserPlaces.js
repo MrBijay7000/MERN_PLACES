@@ -1,4 +1,6 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+
 import PlaceList from "../components/PlaceList";
 
 const DUMMY_PLACES = [
@@ -20,7 +22,7 @@ const DUMMY_PLACES = [
     title: "SHRESTHA SHRESTHA",
     description: "KING KING",
     imageURL:
-      "https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/450226955_122141471498251612_6649273566873597511_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VwqeMg0YFyQQ7kNvgFioRrk&_nc_ht=scontent.fktm7-1.fna&oh=00_AYA9JOg05ub8iwmjXA7SVn7jZp5yBM-APy6GnCOTqFw8vw&oe=6693E849",
+      "https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/450808282_494607879609866_5996737750253051273_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_ohc=ONPIdQ13BiEQ7kNvgGXPaPK&_nc_ht=scontent.fktm7-1.fna&oh=00_AYAKlD3_5zpHbt_kHx8t6cUmlfa-XJHjZzsNqNPtPm4kig&oe=6697A79B",
     address: "NEPAL",
     location: {
       lat: 40.7484405,
@@ -31,5 +33,8 @@ const DUMMY_PLACES = [
 ];
 
 export default function UserPlaces() {
-  return <PlaceList items={DUMMY_PLACES} />;
+  const userId = useParams().userId;
+  const loadedPlaces = DUMMY_PLACES.filter((place) => place.creator === userId);
+
+  return <PlaceList items={loadedPlaces} />;
 }
