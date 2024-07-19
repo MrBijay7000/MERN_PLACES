@@ -24,6 +24,9 @@ export default function PlaceItem(props) {
       >
         <div className="map-container">
           <h2>THE MAP</h2>
+          <div className="place-item__image">
+            <img src={props.image} alt={props.title} />
+          </div>
         </div>
       </Modal>
       <li className="place-item">

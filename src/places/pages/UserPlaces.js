@@ -22,7 +22,7 @@ const DUMMY_PLACES = [
     title: "SHRESTHA SHRESTHA",
     description: "KING KING",
     imageURL:
-      "https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/450808282_494607879609866_5996737750253051273_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_ohc=ONPIdQ13BiEQ7kNvgGXPaPK&_nc_ht=scontent.fktm7-1.fna&oh=00_AYAKlD3_5zpHbt_kHx8t6cUmlfa-XJHjZzsNqNPtPm4kig&oe=6697A79B",
+      "https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/451430546_122143491494251612_6536141516611797437_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=z0Q_iEmyEhUQ7kNvgETGj3R&_nc_ht=scontent.fktm7-1.fna&oh=00_AYCSjcH3kI5WcbD2GVfmQNRAXoVnwDR6C7PaJzUq566xIw&oe=669DCE4C",
     address: "NEPAL",
     location: {
       lat: 40.7484405,
