@@ -7,7 +7,7 @@ export default function Users() {
       id: "u1",
       name: "BIJAY SHRESTHA",
       image:
-        "https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/449768782_122154067604093808_893828229689077505_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Wo1u3dKrt2oQ7kNvgEDc12I&_nc_ht=scontent.fktm7-1.fna&oh=00_AYBXeVEmIYb-sjcxqZO0gQh1kLy3j6LRE8lmtzAmEXP9WQ&oe=66996836",
+        "https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/451714283_122143963214251612_354609968001981056_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=WocZdH1RgmwQ7kNvgEyAPqU&_nc_ht=scontent.fktm10-1.fna&oh=00_AYB2Kc7L5Ni4mDTPhWbbvlUPt1qKYlFrSdcrBuc_c4fZoA&oe=669FA09A",
       places: 3,
     },
   ];
