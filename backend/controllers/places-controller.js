@@ -1,24 +1,9 @@
-// const uuid = require("uuid/v4");
 const { v4: uuidv4 } = require("uuid");
 const { validationResult } = require("express-validator");
 
 const HttpError = require("../models/http-error");
 const getCoordsForAddress = require("../util/location");
 const Place = require("../models/place");
-
-let DUMMY_PLACES = [
-  {
-    id: "p1",
-    title: "BIJAY SHRESTHA",
-    description: "KING OF THE WORLD",
-    location: {
-      lat: 40.7484474,
-      lng: -73.9871516,
-    },
-    address: "BALKOT",
-    creator: "u1",
-  },
-];
 
 const getPlaceById = async (req, res, next) => {
   const placeId = req.params.pid;
@@ -115,7 +100,9 @@ const updatePlace = async (req, res, next) => {
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
-    throw new HttpError("Invalids inputs passed, please check your data", 422);
+    return next(
+      new HttpError("Invalids inputs passed, please check your data", 422)
+    );
   }
 
   const { title, description } = req.body;
