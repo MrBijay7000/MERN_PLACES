@@ -53,8 +53,7 @@ const signup = async (req, res, next) => {
     name,
     email,
     password,
-    image:
-      "https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/452026682_500274909043163_5822397761698274341_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WKHVVrMt9AQQ7kNvgGhXdWe&_nc_ht=scontent.fktm7-1.fna&oh=00_AYD8VK_3Sdyd6HnCayl9G5SzS4nJt02ucjpsbqvacqUskg&oe=66A2B933",
+    image: "https://pbs.twimg.com/media/GTB-a0hWoAAGMKI?format=jpg&name=large",
     places: [],
   });
 
@@ -91,7 +90,10 @@ const login = async (req, res, next) => {
     return next(error);
   }
 
-  res.status(200).json({ message: "Logged in!" });
+  res.status(200).json({
+    message: "Logged in!",
+    user: existingUser.toObject({ getters: true }),
+  });
 };
 
 exports.getUsers = getUsers;

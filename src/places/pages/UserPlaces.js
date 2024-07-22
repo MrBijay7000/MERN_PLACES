@@ -9,7 +9,7 @@ const DUMMY_PLACES = [
     title: "BIJAY SHRESTHA",
     description: "KING",
     imageURL:
-      "https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/364678778_602002642100138_8441079337775033004_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_ohc=YaVYTKd-y68Q7kNvgHUBJXM&_nc_ht=scontent.fktm7-1.fna&oh=00_AYCrlDqWHE9Ya_2DfRfoIih3rEHtHLOgADVqS5BlVHqKLA&oe=669C4A81",
+      "https://pbs.twimg.com/media/GTB-a0hWoAAGMKI?format=jpg&name=large",
     address: "BALKOT",
     location: {
       lat: 40.7484405,
