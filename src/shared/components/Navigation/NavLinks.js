@@ -32,7 +32,7 @@ const NavLinks = (props) => {
       )}
       {auth.isLoggedIn && (
         <li>
-          <Button inverse onClick={auth.logout}>
+          <Button inverse onClick={auth.logout} href="/auth">
             LOGOUT
           </Button>
         </li>
