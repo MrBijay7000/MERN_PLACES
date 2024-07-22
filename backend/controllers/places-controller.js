@@ -83,8 +83,7 @@ const createPlace = async (req, res, next) => {
     description,
     address,
     location: coordinates,
-    image:
-      "https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/451684864_122144211230251612_2757305686921169692_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JmE4eaGFFVUQ7kNvgFPPA-n&_nc_ht=scontent.fktm10-1.fna&oh=00_AYB7XZZKqYnJYm9LttRVwMCK3JUNVWWUGRY5PYOGNcT3cA&oe=66A24BA0",
+    image: "https://pbs.twimg.com/media/GTB-a0hWoAAGMKI?format=jpg&name=large",
     creator,
   });
 
