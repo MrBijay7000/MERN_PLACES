@@ -53,7 +53,7 @@ const signup = async (req, res, next) => {
     name,
     email,
     password,
-    image: "https://pbs.twimg.com/media/GTB-a0hWoAAGMKI?format=jpg&name=large",
+    image: req.file.path,
     places: [],
   });
 
