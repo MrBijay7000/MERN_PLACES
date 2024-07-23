@@ -82,7 +82,7 @@ const signup = async (req, res, next) => {
     token = jwt.sign(
       { userId: createdUser.id, email: createdUser.email },
       "supersecret",
-      { expiresIn: "1m" }
+      { expiresIn: "1h" }
     );
   } catch (err) {
     const error = new HttpError("Signing up failed, please try again", 500);
@@ -111,7 +111,7 @@ const login = async (req, res, next) => {
   if (!existingUser) {
     const error = new HttpError(
       "Could not identify user, credentials seem to be wrong.",
-      401
+      403
     );
     return next(error);
   }
@@ -130,7 +130,7 @@ const login = async (req, res, next) => {
   if (!isValidPassword) {
     const error = new HttpError(
       "Could not identify user, credentials seem to be wrong.",
-      401
+      403
     );
     return next(error);
   }
@@ -140,7 +140,7 @@ const login = async (req, res, next) => {
     token = jwt.sign(
       { userId: existingUser.id, email: existingUser.email },
       "supersecret",
-      { expiresIn: "1m" }
+      { expiresIn: "1h" }
     );
   } catch (err) {
     const error = new HttpError("Logging in failed, please try again", 500);
