@@ -53,7 +53,10 @@ export default function PlaceItem(props) {
         <div className="map-container">
           <h2>THE MAP</h2>
           <div className="place-item__image">
-            <img src={props.image} alt={props.title} />
+            <img
+              src={`http://localhost:5001/${props.image}`}
+              alt={props.title}
+            />
           </div>
         </div>
       </Modal>
@@ -82,7 +85,10 @@ export default function PlaceItem(props) {
         <Card className="place-item__content">
           {isLoading && <LoadingSpinner asOverlay />}
           <div className="place-item__image">
-            <img src={props.image} alt={props.title} />
+            <img
+              src={`http://localhost:5001/${props.image}`}
+              alt={props.title}
+            />
           </div>
           <div className="place-item__info">
             <h2>Title: {props.title}</h2>
